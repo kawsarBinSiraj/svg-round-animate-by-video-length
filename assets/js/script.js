@@ -37,7 +37,7 @@ $(window).on('load', function () {
                 $('.videoLengthShift').text(`(${this.duration}min)`);
                 updateLength(percent_complete, $('.rounded-stroke-1'));
                 let timeShift = Math.round(this.duration) - Math.round(this.currentTime);
-                $('.videoLengthShift').text(`(${timeShift}min)`);
+                $('.videoLengthShift').text(`(${timeShift}sec)`);
             }
         });
 
